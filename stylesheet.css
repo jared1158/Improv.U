@@ -1,0 +1,21 @@
+body {
+background-color: orange;
+}
+
+h1 {
+background-color: brown;
+color: tan;
+}
+
+ul:nth-of-type(1){
+list-style-type: circle;
+
+}
+h4 {
+  background-color: brown;
+  color: tan;
+  font-size: 20;
+}
+h7 {
+  font-size: 20; 
+}
