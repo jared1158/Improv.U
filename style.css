@@ -1,0 +1,206 @@
+html,
+body {
+  font-weight: 300;
+  color: black;
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(white, yellow	); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient( white,yellow	 ); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient( white,yellow	); /* For Firefox 3.6 to 15 */
+  background: linear-gradient( white,yellow	 );
+    font-size: 15px;
+    color:#3c3930;
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: 'latolight';
+    font-weight: 300;
+}
+/*==========================================
+PRE LOADER
+==========================================*/
+
+
+a,
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+a,
+button,
+a span {
+    -webkit-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+.btn.extra-width {
+    padding: 13px 40px;
+}
+.btn:focus,
+.btn:active {
+    outline: inherit;
+}
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*    direction: rtl;*/
+}
+p {
+    margin: 0 0 15px;
+}
+.clear {
+    clear: both;
+}
+ol,
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+
+.img-overlay{
+	position:absolute;
+	background:rgba(0, 0, 0, .3);
+	width:100%;
+	height:100%;
+	top:0;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    min-height: 750px;
+}
+.overlay-fluid-block {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+.home-overlay-fluid {
+    background-color: rgba(41, 41, 41, 0.68);
+    width: 80%;
+    margin: auto;
+}
+.overlay-img {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+	min-height:700px;
+    overflow:hidden;
+}
+.no-padding {
+    padding: 0 !important;
+}
+.fluid-blocks-col {
+    padding: 70px 40px 0 80px;
+}
+.fluid-blocks-col-right {
+    padding: 70px 80px 0 40px;
+}
+/*
+Separator
+*/
+.separator {
+    height: 1px;
+    width: 150px;
+    margin: auto;
+    background: #f56363;
+}
+
+/*
+Button
+*/
+.btn-primary.active.focus,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary:active.focus,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.open > .dropdown-toggle.btn-primary.focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary.focus,
+.btn-primary:focus,
+.btn-primary.disabled,
+.btn-primary.disabled:hover {
+    color: #ffffff;
+    background-color: #f56363;
+    border-color: #f56363;
+}
+
+.btn-default:active, .btn-default:hover  {
+    background: transparent;
+}
+
+.home{
+    background: url(../images/header-bg.png) no-repeat center;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+	min-height:700px;
+    overflow: hidden;
+}
+.home-content{
+    margin-top:300px;
+    color:white;
+    text-transform:uppercase;
+}
+
+.home-content h1{
+    font-size:60px;
+	margin-bottom:30px;
+	font-family: 'santelia_scriptbold_dmo';
+}
+
+.home-content h5{
+    font-family: 'latoregular';
+    font-size:30px;
+}
+.carousel-indicators {
+    bottom: -200px;
+}
+.carousel-indicators li {
+    width: 18px;
+    height: 18px;
+}
+.carousel-indicators .active {
+	width: 20px;
+    height: 20px;
+}
+
+/*For Parallax Section*/
+
+.frame {
+    height: 300px;
+    width: 400px;
+    float: left;
+    margin: 45px 100px 300px 190px;
+    /* margin: top right bottom left; */
+    box-shadow: 7px 7px 40px #606060;
+}
+
+#mental {
+    border-radius: 25px;
+    background: #FFFFFF;
+    font-size: 3em;
+    font-family: Futura;
+    color: #27314A;
+    text-align: center;
+
+}
+
+#physcial {
+        border-radius: 25px;
+        background: #649ECE;
+        font-size: 3em;
+        font-family: Futura;
+        color: #FFFFFF;
+        text-align: center;
+    }
