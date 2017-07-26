@@ -8,17 +8,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="homescript.js"></script>
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="/resources/bootstrap.min.css">
+
+        <link rel="stylesheet" href="/resources/style.css">
 
 
 
     </head>
 
     <body data-spy="scroll" data-target="#main-navbar">
-
 
 
 		<!--Home page style-->
@@ -84,27 +83,64 @@
           <div class="centered">
             <div align="center" class="frame" id="mental">
               <h1> MENTAL<h1>
-            <ul>  <li><img src="lol-animated-emoji.gif" width="72" height="72">Laughter</a></li>
-                  <li><img src="sun.jpeg" width="72" height="72"></a>Stressed?</li>
-                  <li><img src="emoji-smiley-thinking-face.png" width="72" height="72">Intellectual</a></li>
+                <!--images-->
+                <ul>
+                  <li>
+                    <a href="/post?page_id=3">
+            <img src="/resources/memeface.jpg" width="72" height="72">
+                Laughter
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="/post?page_id=0">
+                <img src="/resources/ssflower.jpg" width="100" height="72">
+                Relax
+                  </a>
+                  </li>
+
+               <li>
+                    <a href="/post?page_id=1">
+                    <img src="/resources/atom.gif" width="72" height="72">
+                Intellectual
+                  </a>
+                </li>
+
                 </ul>
             </div>
             <div align="center" class="frame" id="physcial">
               <h1>BODY<h1>
-              <ul><li><img src="spinner.gif" width="72" height="72">Fitness</a></li>
-                  <li><img src="fruitbowl1 (1).gif" width="72" height="72">Food Life</a></li>
+
+              <ul>
+                <li>
+                    <a href="/post?page_id=4">
+                      <img src="/resources/run.gif" width="72" height="72">
+                      Fitness
+                    </a>
+                  </li>
+                 <li>
+                     <a href="/post?page_id=2">
+                    <img src="/resources/fruitloop.gif" width="72" height="72">
+                    Food Life</a>
+                  </li>
                 </ul>
             </div>
           </div>
 
 <!--embed src="assets/backgroundsong.mp4" autostart="true" width="100" height="50"-->
 
-             </body>
+    </body>
 
-        <script src="assets/js/vendor/bootstrap.min.js"></script>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    
+
 
     </body>
+    <div class='blog-list-wrapper'>
+    </div>
+    <div>
+
+      {{ bloglist  }}
+    </div>
 </html>
