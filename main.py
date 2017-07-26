@@ -1,25 +1,54 @@
-#!/usr/bin/env python
-#
-# Copyright 2007 Google Inc.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
 import webapp2
+import sys
+import jinja2
+import os
+
+from os import path
+sys.path.append('source/')
+
+from webpost import BlogPost
+from webpost import blog_list
+
+#setting up the Environment for jinja
+#that sets jinja's relative directory to match the directory's name
+template_dir = path.join(path.dirname(__file__) , 'template')
+jinja_environment  = jinja2.Environment(
+    loader=jinja2.FileSystemLoader(template_dir))
+
+
+def constructBlogListHTML():
+    #blog_list = constructBlogList()
+    html_string = "<ol>\n"
+    for i in range(0 , len(blog_list)):
+        blog_post = blog_list[i]
+        html_string += "<li>" + str((blog_post.listString())) + "</li>"
+    html_string += '</ol>'
+    return html_string
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+        # This creates and serves the blog post page
+        #this is where you reference your html file
+        template = jinja_environment.get_template('index.html')
+        template_variables = {'bloglist':constructBlogListHTML()}
+        self.response.out.write(template.render(template_variables))
+
+class PostHandler(webapp2.RequestHandler):
+    def get(self):
+        # This creates and serves the blog post page
+        page_id = self.request.get('page_id')
+        if not page_id:
+            page_id=0
+        else:
+            page_id= int(page_id)
+        blog_post = blog_list[page_id]
+
+        template = jinja_environment.get_template(blog_post.template)
+        template_variables = {}
+        self.response.out.write(template.render(template_variables))
+
 
 app = webapp2.WSGIApplication([
-    ('/', MainHandler)
+    ('/', MainHandler),
+    ('/post',PostHandler)
 ], debug=True)
