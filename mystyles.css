@@ -1,0 +1,135 @@
+
+body {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: black;
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(white, yellow	); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient( white,yellow	 ); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient( white,yellow	); /* For Firefox 3.6 to 15 */
+  background: linear-gradient( white,yellow	 );
+    font-size: 15px;
+    color:#3c3930;
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: 'latolight';
+    font-weight: 300;
+}
+
+.frame {
+    height: 35%;
+    width: 100%;
+    float: left;
+    margin: 10px 0px 10px 0px;
+    /* margin: top right bottom left; */
+    box-shadow: 7px 7px 40px #606060;
+  }
+
+
+#mental {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+    background: #FFFFFF;
+    height: 700px;
+    font-size: 1.2em;
+    font-family: Futura;
+    color: #27314A;
+    text-align: center;
+    overflow: scroll;
+    width: 900px;
+    float: left;
+    margin: 10px 220px 10px 10px;
+    /* margin: top right bottom left; */
+    box-shadow: 7px 7px 40px #606060;
+    font-size: 15px;
+    color:#3c3930;
+
+    padding: 60px;
+
+
+
+}
+
+#physcial {
+        background: lightgreen;
+        font-size: 1.2em;
+        font-family: Futura;
+        color: #FFFFFF;
+        text-align: center;
+        margin: 70px 100px 40px 500px;
+        width:400px;
+        height: 90px;
+        border-radius: 34px;
+    }
+
+#toBottom{
+margin: 300px 100px 400px 50px;
+}
+#name-container {
+                  font-size: 1.2em;
+                  font-family: Futura;
+                  color: #27314A;
+                  text-align:left;
+                  height: 40px;
+                  width: 400px;
+                  float: left;
+                  margin: 45px 10px 30px 10px;
+                }
+
+#header-container {
+                  font-size: 1.2em;
+                  font-family: Futura;
+                  color: #27314A;
+                  text-align:left;
+                  height: 40px;
+                  width: 400px;
+                  float: left;
+                  margin: 23px 1px 10px 100px;
+                }
+#comment-container {
+                      font-size: 1.2em;
+                      font-family: Futura;
+                      color: #27314A;
+                      text-align:left;
+                      height: 300px;
+                      width: 85%;
+                      float: left;
+                      margin: 45px 100px 100px 40px;
+                      /* margin: top right bottom left; */
+                      box-shadow: 7px 7px 40px #606060;
+                      height: 200px;
+                      overflow: scroll;
+                      background: #FFFFFF;
+                    }
+
+
+  textarea {
+  width: 75%;
+  height: 10em;
+}
+
+label {
+  display: block;
+}
+
+
+  h1.centered {
+    padding-top: 20pt;
+    color: brown ;
+    font-size: 40pt;
+    padding-bottom: 6pt;
+    font-family: "Lucida" Grande, sans-serif;
+    line-height: 1.15;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    text-align: center;
+
+  }

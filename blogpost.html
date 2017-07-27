@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="resources/mystyles.css"/>
+  </head>
+  <body>
+
+
+    <h1>{{ title }}</h1>
+
+    <form method="post" action ="">
+      <h4>please write it clear and tidy<h4>
+<p id="header-container">  Your Name:</p>
+   <input id="name-container" type="text" name="usersName_submission"> </input>
+      <textarea align="center" id="comment-content" name="comment"></textarea>
+      <input align="center" class="frame" id="physcial" type="submit" value="Submit">
+    </form>
+
+    <div id="comment-container">
+      {{usersName}}
+      {{ comments }}
+    </div>
+    <div id="footer-container" id="cfv b ">
+      {{ content }}
+    </div>
+
+    <div align="center" id="toBottom">
+    <a href="/">Go Back to Home </a>
+    </div>
+    </div>
+
+
+  </body>
+</html>
