@@ -1,0 +1,31 @@
+html{
+background-color: #CCDBE2;
+
+}
+h2{font-size: 40px;
+
+
+}
+p{font-size: 30px;
+
+
+}
+li{
+
+  font-size: 30px;
+}
+h1{
+  font-size: 50px
+}
+
+.image {
+   position: relative;
+    /* for IE 6 */
+}
+
+h2.up {
+   position: absolute;
+   top: 200px;
+   left: 0;
+   width: 100%;
+}
