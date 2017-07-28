@@ -137,16 +137,6 @@ Button
     background: transparent;
 }
 
-.home{
-    background: url(../images/header-bg.png) no-repeat center;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    width: 100%;
-	min-height:700px;
-    overflow: hidden;
-}
 .home-content{
     margin-top:300px;
     color:white;
@@ -198,9 +188,11 @@ Button
 
 #physcial {
         border-radius: 25px;
-        background: #649ECE;
+        background: white;
         font-size: 3em;
         font-family: Futura;
-        color: #FFFFFF;
-        text-align: center;
+        color: black;
+        text-align: center ;
+      
+
     }

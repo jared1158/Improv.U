@@ -1,36 +1,161 @@
-<html>
- <head>
-   <link rel="stylesheet" href="resources/mystyles.css">
+<!doctype html>
 
- </head>
- <body>
+<html class="no-js" lang=""> <!--<![endif]-->
+    <head>
 
-     <h1  class = "centered" align="center"> Improve.U: Food for Life  </h1>
+        <title>Imporv.U </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="/resources/bootstrap.min.css">
+
+        <link rel="stylesheet" href="/resources/style.css">
 
 
 
-    <div align="center"  id="mental">
+    </head>
+
+    <body data-spy="scroll" data-target="#main-navbar">
+
+
+		<!--Home page style-->
+		<header id="home" class="home">
+            <div class="overlay-img">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="home-content text-center">
+
+								<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2000">
+									  <!-- Indicators -->
+									  <ol class="carousel-indicators">
+										<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+										<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+										<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+										<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+									  </ol>
+									  <!-- Wrapper for slides -->
+									  <div class="carousel-inner" role="listbox">
+
+										<div class="item active">
+											<h1>Welcome to Improv.U!</h1>
+											<h5>developed by 2017 CSSI @ Atlanta</h5>
+										</div>
+
+										<div class="item">
+
+											<h1>A simple website to enjoy! </h1>
+										</div>
+
+										<div class="item">
+											<h1> Mental </h1>
+
+										</div>
+
+										<div class="item">
+											<h1> Physical Fitness</h1>
+
+										</div>
 
 
 
-<div align="center" >
+									  </div>
 
- {{ ListOfRecipes  }}
- <a href="/">
-    <button align="center" class="frame" id="physcial" > Next to Random Recipe </button>
- </a>
-      </div>
+
+								</div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+
+
+
+
+        <body>
+          <div class="centered">
+            <div align="center" class="frame" id="mental">
+              <h1> MENTAL<h1>
+                <!--images-->
+                <ul>
+                  <li>
+                    <a href="/post?page_id=3">
+            <img src="/resources/memeface.jpg" width="72" height="72">
+                Laughter
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="/post?page_id=0">
+                <img src="/resources/ssflower.jpg" width="100" height="72">
+                Relax
+                  </a>
+                  </li>
+
+               <li>
+                    <a href="/post?page_id=1">
+                    <img src="/resources/atom.gif" width="72" height="72">
+                Intellectual
+                  </a>
+                </li>
+
+                </ul>
+            </div>
+            <div align="center" class="frame" id="physcial">
+              <h1>BODY<h1>
+
+              <ul>
+                <li>
+                    <a href="/post?page_id=4">
+                      <img src="/resources/run.gif" width="72" height="72">
+                      Fitness
+                    </a>
+                  </li>
+                 <li>
+                     <a href="/post?page_id=2">
+                    <img src="/resources/fruitloop.gif" width="72" height="72">
+                    Food Life</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+
+<!--embed src="assets/backgroundsong.mp4" autostart="true" width="100" height="50"-->
+
+    </body>
+
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+    </body>
+    <div class='blog-list-wrapper'>
     </div>
+    <div>
 
+      {{ bloglist  }}
 
-
-    <div align="center" class="frame" id="physcial">
-      <div class="blog-list-wrapper">
-        {{ bloglist }}
-      </div>
     </div>
+    <div align="center" >
 
+     {{ ListOfRecipes  }}
+     <a href="/">
+        <button align="center" class="frame" id="physcial" > Next to Random Recipe </button>
+     </a>
+          </div>
+        </div>
 
-
- </body>
+        <div align="center" class="frame" id="physcial">
+          <div class="food-list-wrapper">
+            {{ foodlist }}
+          </div>
+        </div>
 </html>
